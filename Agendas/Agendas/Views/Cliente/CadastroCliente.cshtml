@@ -1,0 +1,97 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+</head>
+<body>
+
+    <script>
+        function montar_tabela() {
+            var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+            var linhas = "";
+            for (var i = 0; i < clientes.length; i++) {
+                var nome = clientes[i].nome;
+                var email = clientes[i].email;
+                var matricula = clientes[i].matricula;
+                var l = `<tr>
+                                <td>${nome}</td>
+                                <td>${email}</td>
+                                <td>${matricula}</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm" onclick="excluir(${i})">Excluir</button>
+                                </td>
+                             </tr>`;
+                linhas += l;
+            }
+            document.getElementById("corpo_tabela").innerHTML = linhas;
+        }
+
+        
+        function salvar() {
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            // Gera matrícula sequencial
+            var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+            var matricula = (clientes.length > 0) ? clientes[clientes.length - 1].matricula + 1 : 1;
+
+            // Salva os dados no Local Storage (ou poderia usar um backend)
+            clientes.push({ nome: nome, email: email, matricula: matricula, senha: senha });
+            localStorage.setItem("clientes", JSON.stringify(clientes));
+
+            // Limpa os campos do formulário
+            limpar();
+            alert("Cliente cadastrado com sucesso!");
+        }
+
+        function limpar() {
+            document.getElementById("nome").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("senha").value = "";
+        }
+    </script>
+ 
+
+    <div class="card text-white bg-dark">
+        <div class="card-header">
+            <h1><strong> <center>Cadastro</center></strong></h1>
+        </div>
+        <div class="card-body">
+			<form onsubmit="event.preventDefault(); salvar();">
+				<div class="col-5">
+					<label class="form-label">Matrícula</label>
+					<input class="form-control" type="text" id="matricula" value="" disabled />
+				</div>
+                <div class="col-5">
+                    <label class="form-label">Nome completo</label>
+                    <input class="form-control" type="text" id="nome" required />
+                </div>
+                <div class="col-5">
+                    <label class="form-label">E-mail de cadastro</label>
+                    <input class="form-control" type="email" id="email" required />
+                </div>
+               
+                <div class="col-5">
+                    <label class="form-label">Digite a Senha</label>
+                    <input class="form-control" type="password" id="senha" required />
+                </div>
+                <br />
+                <button type="submit" class="btn btn-secondary btn-lg me-2">Salvar</button>
+                <a href="/Tarefa/Adm" class="btn btn-info btn-lg me-2" >Ver Clientes</a>
+			</form>  
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
+

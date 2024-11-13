@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Agendas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\tarefa\\adm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\adm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\tarefa\\tarefas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\tarefas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\tarefa\\escolha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\escolha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 155,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Adm.cshtml",
+              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Adm.cshtml",
+              "RelativeDocumentMoniker": "Agendas\\Views\\Tarefa\\Adm.cshtml",
+              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Adm.cshtml",
+              "RelativeToolTip": "Agendas\\Views\\Tarefa\\Adm.cshtml",
+              "ViewState": "AgIAALMAAAAAAAAAAAAgwMMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T01:11:17.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TarefaController.cs",
+              "DocumentMoniker": "D:\\Agendas\\Agendas\\Controllers\\TarefaController.cs",
+              "RelativeDocumentMoniker": "Agendas\\Controllers\\TarefaController.cs",
+              "ToolTip": "D:\\Agendas\\Agendas\\Controllers\\TarefaController.cs",
+              "RelativeToolTip": "Agendas\\Controllers\\TarefaController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAYwIAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T00:57:48.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CadastroCliente.cshtml",
+              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
+              "RelativeDocumentMoniker": "Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
+              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
+              "RelativeToolTip": "Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T23:32:49.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Agendas\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Agendas\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T23:22:07.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Agendas\\Agendas\\Program.cs",
+              "RelativeDocumentMoniker": "Agendas\\Program.cs",
+              "ToolTip": "D:\\Agendas\\Agendas\\Program.cs",
+              "RelativeToolTip": "Agendas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T23:22:44.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tarefas.cshtml",
+              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Tarefas.cshtml",
+              "RelativeDocumentMoniker": "Agendas\\Views\\Tarefa\\Tarefas.cshtml",
+              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Tarefas.cshtml",
+              "RelativeToolTip": "Agendas\\Views\\Tarefa\\Tarefas.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv3oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T00:02:20.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Escolha.cshtml",
+              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Escolha.cshtml",
+              "RelativeDocumentMoniker": "Agendas\\Views\\Tarefa\\Escolha.cshtml",
+              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Escolha.cshtml",
+              "RelativeToolTip": "Agendas\\Views\\Tarefa\\Escolha.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T00:02:03.68Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

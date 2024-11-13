@@ -1,0 +1,122 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "Tarefas";
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+   
+
+    <title>To do List</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1>To do List</h1>
+        <input type="text" placeholder="Digite aqui a sua tarefa!" id="input-tarefa">
+        <input type="text" placeholder="Digite a categoria!" id="input-categoria">
+        <button id="btn-adicionar">Adicionar!</button><br><br>
+
+        <select id="select-opcoes">
+            <option value="">Escolha uma categoria</option>
+        </select>
+
+        <div id="div-resultado"></div>
+    </div>
+
+
+    <script>
+        let inputTarefa = document.querySelector('#input-tarefa');
+        let inputCategoria = document.querySelector('#input-categoria');
+        let btn = document.querySelector('#btn-adicionar');
+        let select = document.querySelector('#select-opcoes');
+        let divResultado = document.querySelector('#div-resultado');
+
+        // Armazenar tarefas por categoria
+        let tarefasPorCategoria = {};
+
+        btn.addEventListener('click', function adicionar() {
+            let textoTarefa = inputTarefa.value;
+            let categoria = inputCategoria.value;
+
+            if (!textoTarefa || !categoria) {
+                alert('Por favor, preencha a tarefa e a categoria.');
+                return;
+            }
+
+            // Adiciona a nova categoria ao select, se não existir
+            if (!Array.from(select.options).some(option => option.value === categoria)) {
+                let opcao = document.createElement('option');
+                opcao.value = categoria;
+                opcao.textContent = categoria;
+                select.appendChild(opcao);
+            }
+
+            // Adiciona a tarefa à lista de tarefas da categoria
+            if (!tarefasPorCategoria[categoria]) {
+                tarefasPorCategoria[categoria] = [];
+            }
+            tarefasPorCategoria[categoria].push(textoTarefa);
+
+            // Limpa os campos após adicionar
+            inputTarefa.value = '';
+            inputCategoria.value = '';
+
+            // Atualiza a exibição das tarefas
+            atualizarTarefas();
+        });
+
+        // Função para atualizar a exibição das tarefas com base na categoria selecionada
+        select.addEventListener('change', function () {
+            atualizarTarefas();
+        });
+
+        function atualizarTarefas() {
+            // Limpa as tarefas exibidas
+            divResultado.innerHTML = '';
+            let categoriaSelecionada = select.value;
+
+            if (categoriaSelecionada && tarefasPorCategoria[categoriaSelecionada]) {
+                tarefasPorCategoria[categoriaSelecionada].forEach(tarefa => {
+                    let tarefaElement = document.createElement('p');
+                    tarefaElement.textContent = tarefa;
+                    tarefaElement.style.display = 'flex';
+                    tarefaElement.style.justifyContent = 'space-between';
+
+                    let btnExcluir = document.createElement('button');
+                    btnExcluir.textContent = 'X';
+                    btnExcluir.style.backgroundColor = '#16d09f';
+                    btnExcluir.addEventListener('click', () => {
+                        // Remove a tarefa da categoria
+                        tarefasPorCategoria[categoriaSelecionada] = tarefasPorCategoria[categoriaSelecionada].filter(t => t !== tarefa);
+                        atualizarTarefas(); // Atualiza a exibição
+                    });
+
+                    tarefaElement.appendChild(btnExcluir);
+                    divResultado.appendChild(tarefaElement);
+                });
+            }
+        }
+	</script>
+	<a href="~/Tarefa/Escolha" class="btn btn-secondary btn-lg active fixed-button" aria-pressed="true"><img src="~/img/costas.png" width="35px" /></a>
+
+	<br>
+	<div class="progress-container">
+		<div class="progress-bar" id="progressBar">0%</div>
+	</div>
+	<br>
+
+	<script src="~/js/progresso.js"></script>
+</body>
+</html>
+
+
+

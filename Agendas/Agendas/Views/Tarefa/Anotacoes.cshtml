@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewData["Title"] = "Anotações";
+   
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Drag-and-Drop</title>
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="menu">
+            <div class="component" id="task" draggable="true" ondragstart="drag(event)">
+                Tarefa
+                <input type="checkbox">
+            </div>
+            <div class="component" id="column" draggable="true" ondragstart="drag(event)">
+                Coluna
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="main-content">
+
+
+        <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3>Diario</h3>
+            <!-- Itens arrastados irão aparecer aqui -->
+        </div>
+        <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3>Recorrente</h3>
+        </div>
+    </div>
+
+    <div class="workspace" id="workspace">
+        <!-- Aqui serão adicionadas as colunas -->
+    </div>
+
+
+    <script src="~/js/Script.js"></script>
+
+    <a href="~/Tarefa/Escolha" class="btn btn-secondary btn-lg active fixed-button" aria-pressed="true"><img src="~/img/costas.png" width="35px" /></a>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+    <br>
+
+    <script src="~/js/progresso.js"></script>
+</body>
+
+</html>

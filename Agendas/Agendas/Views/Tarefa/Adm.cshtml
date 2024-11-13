@@ -1,0 +1,223 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+*@
+@{
+
+   
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrativo</title>
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+</head>
+<body>
+
+    <h1><center>Administrativo</center></h1>
+    <p>
+        <br>
+        <style>
+            body {
+                color: white; /* Aplica a cor branca a todo o corpo da página */
+            }
+
+            .card-header {
+                color: white; /* Aplica a cor branca ao cabeçalho do cartão */
+            }
+
+            .table th, .table td {
+                color: white; /* Aplica a cor branca ao texto das células da tabela */
+            }
+
+            table, tr, th {
+                border: 1px solid black;
+            }
+
+            tr, th {
+                padding: 8px;
+                padding-left: 8px;
+                padding-right: 15px;
+            }
+        </style>
+
+        @* <label for="exampleDataList" class="form-label">Clientes Cadastrados</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Busque por nome ...">
+        <datalist id="datalistOptions">
+            <option value="" />
+        </datalist> *@
+        @* <div class="card text-white bg-dark">
+            <div class="card-header">
+        <table class="table">function() {
+                        alert("Ocorreu um erro ");
+                    }>
+							<th><img src="~/img/nome.png" width="30px"/></th>
+							<th><img src="~/img/email.png" width="30px"/></th>
+							<th><img src="~/img/id.png" width="30px;" /></th>
+					<th><img src="~/img/delete.png" /></th>
+                </tr>
+            </thead>
+            <tbody id="corpo_tabela"></tbody>
+        </table>
+
+        <script>
+            function montar_tabela() {
+                var clientes = JSON.parse(localStorage.getItem("clientes")) || []; 
+                var linhas = "";
+                for (var i = 0; i < clientes.length; i++) {
+                    var nome = clientes[i].nome;
+                    var email = clientes[i].email;
+                    var matricula = clientes[i].matricula;
+                    var l = `<tr>
+                                        <td>${nome}</td>
+                                        <td>${email}</td>
+                                        <td>${matricula}</td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" onclick="excluir(${i})">Excluir</button>
+                                        </td>
+                                     </tr>`;
+                    linhas += l;
+                }
+                document.getElementById("corpo_tabela").innerHTML = linhas;
+            }
+
+            function excluir(index) {
+                var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+                clientes.splice(index, 1); // Remove o cliente da lista
+                localStorage.setItem("clientes", JSON.stringify(clientes)); // Atualiza o Local Storage
+                montar_tabela(); // Atualiza a tabela
+            }
+
+         
+
+            window.onload = montar_tabela;
+			</script> 
+		</div>
+		</div>*@
+
+             <br />
+        <br /><br />
+       
+        <br>
+
+        <form onsubmit="event.preventDefault(); salvar();">
+            <div class="col-5">
+                <label class="form-label">Matrícula</label>
+                <input class="form-control" type="text" id="matricula" value="" disabled />
+            </div>
+            <div class="col-5">
+                <label class="form-label">Nome completo</label>
+                <input class="form-control" type="text" id="nome" required />
+            </div>
+            <div class="col-5">
+                <label class="form-label">E-mail de cadastro</label>
+                <input class="form-control" type="email" id="email" required />
+            </div>
+
+            <div class="col-5">
+                <label class="form-label">Digite a Senha</label>
+                <input class="form-control" type="password" id="senha" required />
+            </div>
+            <br />
+           </form>
+
+        <script>
+            function buscar() {
+                var jsonEnvio = {};
+                jsonEnvio.nome = document.getElementById("nome").value;
+                $.ajax({
+                    url: "/Tarefa/buscar",
+                    data: jsonEnvio,
+                    type: "get",
+                    success: function (resp) {
+                        document.getElementById("corpo_tabela").innerHTML = resp;
+                    },
+                    error: function () {
+                        alert("Ocorreu um erro!!!");
+                    }
+                });
+            }
+
+            function salvar() {
+                var jsonEnvio = {};
+                jsonEnvio.nome = document.getElementById("nome").value;
+                  jsonEnvio.email = document.getElementById("email").value;
+                    jsonEnvio.senha = document.getElementById("senha").value;
+                $.ajax({
+                    url: "/Tarefa/Salvar",
+                    data: jsonEnvio,
+                    type: "post",
+                    success: function (resp) {
+                       alert("Adicionado com sucesso: " + jsonEnvio.nome );
+                    },
+                    error: function () {
+                        alert("Ocorreu um erro!!!");
+                    }
+                });
+            }
+
+            function excluir(event){
+                var jsonEnvio = {};
+                jsonEnvio.matricula = event.target.id;
+                
+                $.ajax({
+                    url: "/tarefa/Delete",
+                    data: jsonEnvio,
+                    type: "delete",
+                    success: function (resp){
+                        alert("Excluido com sucesso: " + resp.nome );
+                    },
+                    error: function(){
+                        alert("Ocorreu um erro ");
+                    }
+                });
+                
+            }
+                function limpar() {
+                document.getElementById("nome").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("senha").value = "";
+            }
+
+        </script>
+
+
+
+
+             
+        <input type="button" value="Buscar" onclick="buscar()" />
+        <input type="button" value="Salvar" onclick="salvar()" />
+        <input type="button" value="Limpar" onclick="limpar()" /><br /><br />
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                    <th>Matricula</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="corpo_tabela">
+            </tbody>
+        </table>
+        
+        <a href="~/Tarefa/Escolha" class="btn btn-secondary btn-lg active fixed-button" aria-pressed="true"><img src="~/img/costas.png" width="35px" /></a>
+
+
+
+		<div class="progress-container">
+			<div class="progress-bar" id="progressBar">0%</div>
+		</div>
+		<br>
+
+		<script src="~/js/progresso.js"></script>
+
+</body>
+</html>
+
+
+		
