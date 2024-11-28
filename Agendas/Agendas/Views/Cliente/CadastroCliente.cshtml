@@ -13,6 +13,19 @@
 <body>
 
     <script>
+
+        function editar(matricula, email, nome) {
+            document.getElementById("matricula").value = matricula;
+            document.getElementById("email").value = email;
+            document.getElementById("nome").value = nome;
+        }
+
+        function confirmarExcluir(matricula) {
+            if (confirm("Deseja realmente excluir?")) {
+                excluir(matricula);
+            }
+        }
+
         function montar_tabela() {
             var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
             var linhas = "";
@@ -33,24 +46,56 @@
             document.getElementById("corpo_tabela").innerHTML = linhas;
         }
 
-        
-        function salvar() {
-            var nome = document.getElementById("nome").value;
-            var email = document.getElementById("email").value;
-            var senha = document.getElementById("senha").value;
+        function inserirOuAlterar() {
 
-            // Gera matrícula sequencial
-            var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
-            var matricula = (clientes.length > 0) ? clientes[clientes.length - 1].matricula + 1 : 1;
-
-            // Salva os dados no Local Storage (ou poderia usar um backend)
-            clientes.push({ nome: nome, email: email, matricula: matricula, senha: senha });
-            localStorage.setItem("clientes", JSON.stringify(clientes));
-
-            // Limpa os campos do formulário
-            limpar();
-            alert("Cliente cadastrado com sucesso!");
+            var jsonEnvio = {};
+            jsonEnvio.matricula = document.getElementById("matricula").value;
+            jsonEnvio.email = document.getElementById("email").value;
+            jsonEnvio.nome = document.getElementById("nome").value;
+            jsonEnvio.senha = document.getElementById("senha").value;
+            var acao = "";
+            if (jsonEnvio.matricula != "") {
+                acao = "Alterar";
+            } else {
+                acao = "Inserir";
+            }
+            $.ajax({
+                url: "/Funcionario/" + acao + "/",
+                data: jsonEnvio,
+                type: "post",
+                success: function (resp) {
+                    if (resp == "ok") {
+                        alert("Funcionario cadastrado com sucesso!");
+                        consultar();
+                    } else {
+                        alert(resp)
+                    }
+                },
+                error: function () {
+                    alert("Ocorreu um erro ao excluir!!!");
+                }
+            });
         }
+
+
+
+        // function salvar() {
+        //     var nome = document.getElementById("nome").value;
+        //     var email = document.getElementById("email").value;
+        //     var senha = document.getElementById("senha").value;
+
+        //     // Gera matrícula sequencial
+        //     var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+        //     var matricula = (clientes.length > 0) ? clientes[clientes.length - 1].matricula + 1 : 1;
+
+        //     // Salva os dados no Local Storage (ou poderia usar um backend)
+        //     clientes.push({ nome: nome, email: email, matricula: matricula, senha: senha });
+        //     localStorage.setItem("clientes", JSON.stringify(clientes));
+
+        //     // Limpa os campos do formulário
+        //     limpar();
+        //     alert("Cliente cadastrado com sucesso!");
+        // }
 
         function limpar() {
             document.getElementById("nome").value = "";

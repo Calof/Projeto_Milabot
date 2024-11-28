@@ -43,65 +43,6 @@
             }
         </style>
 
-        @* <label for="exampleDataList" class="form-label">Clientes Cadastrados</label>
-        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Busque por nome ...">
-        <datalist id="datalistOptions">
-            <option value="" />
-        </datalist> *@
-        @* <div class="card text-white bg-dark">
-            <div class="card-header">
-        <table class="table">function() {
-                        alert("Ocorreu um erro ");
-                    }>
-							<th><img src="~/img/nome.png" width="30px"/></th>
-							<th><img src="~/img/email.png" width="30px"/></th>
-							<th><img src="~/img/id.png" width="30px;" /></th>
-					<th><img src="~/img/delete.png" /></th>
-                </tr>
-            </thead>
-            <tbody id="corpo_tabela"></tbody>
-        </table>
-
-        <script>
-            function montar_tabela() {
-                var clientes = JSON.parse(localStorage.getItem("clientes")) || []; 
-                var linhas = "";
-                for (var i = 0; i < clientes.length; i++) {
-                    var nome = clientes[i].nome;
-                    var email = clientes[i].email;
-                    var matricula = clientes[i].matricula;
-                    var l = `<tr>
-                                        <td>${nome}</td>
-                                        <td>${email}</td>
-                                        <td>${matricula}</td>
-                                        <td>
-                                            <button class="btn btn-danger btn-sm" onclick="excluir(${i})">Excluir</button>
-                                        </td>
-                                     </tr>`;
-                    linhas += l;
-                }
-                document.getElementById("corpo_tabela").innerHTML = linhas;
-            }
-
-            function excluir(index) {
-                var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
-                clientes.splice(index, 1); // Remove o cliente da lista
-                localStorage.setItem("clientes", JSON.stringify(clientes)); // Atualiza o Local Storage
-                montar_tabela(); // Atualiza a tabela
-            }
-
-         
-
-            window.onload = montar_tabela;
-			</script> 
-		</div>
-		</div>*@
-
-             <br />
-        <br /><br />
-       
-        <br>
-
         <form onsubmit="event.preventDefault(); salvar();">
             <div class="col-5">
                 <label class="form-label">Matrícula</label>
@@ -123,6 +64,7 @@
             <br />
            </form>
 
+
         <script>
             function buscar() {
                 var jsonEnvio = {};
@@ -138,6 +80,12 @@
                         alert("Ocorreu um erro!!!");
                     }
                 });
+            }
+
+            function editar(matricula, email, nome) {
+                document.getElementById("matricula").value = matricula;
+                document.getElementById("email").value = email;
+                document.getElementById("nome").value = nome;
             }
 
             function salvar() {
@@ -188,17 +136,18 @@
 
              
         <input type="button" value="Buscar" onclick="buscar()" />
-        <input type="button" value="Salvar" onclick="salvar()" />
+        <input type="button" value="Salvar" onclick="inserirOuAlterar()" />
         <input type="button" value="Limpar" onclick="limpar()" /><br /><br />
 
         <table>
             <thead>
                 <tr>
-                    <th>Editar</th>
-                    <th>Excluir</th>
+                    
                     <th>Matricula</th>
                     <th>Nome</th>
                     <th>Email</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
                 </tr>
             </thead>
             <tbody id="corpo_tabela">

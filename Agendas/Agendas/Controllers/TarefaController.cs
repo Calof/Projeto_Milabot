@@ -122,11 +122,12 @@ namespace Agendas.Controllers
                 while (dr.Read())
                 {
                     string linha = "<tr>";
-		            linha += "<td><img src='/img/edit.png'/></td>";
-                    linha += $"<td> <input type=\"button\" value=\"excluir\" onclick = \"excluir(event)\" id =\"{dr.GetInt32(0)}\" > <img src='/img/delete.png'> </td>"; 
-                    linha += $"<td>{dr.GetInt32(0)}</td>";
-                    linha += $"<td>{dr.GetString(1)}</td>";
-                    linha += $"<td>{dr.GetString(2)}</td>";
+		           linha += $"<th>{dr.GetInt32(0)}</th>";
+                    linha += $"<th>{dr.GetString(1)}</th>";
+                    linha += $"<th>{dr.GetString(2)}</th>"; 
+                    linha += "<th><img src='/img/edit.png' onclick = \"editar()\"/></th>";
+                    linha += $"<th> <img src='/img/delete.png' id =\"{dr.GetInt32(0)}\" onclick = \"excluir(event)\" > </th>"; 
+                    
                     linha += "</tr>";
  
                     linhas += linha;
@@ -139,7 +140,40 @@ namespace Agendas.Controllers
                 return $"Não foi possível consultar!!!{ex}";
             }
         }
- 
+
+        [HttpPost]
+        public String Alterar(string nome, string email, string senha)
+        {
+            SQLiteConnection? sqlite_conn = null;
+            try
+            {
+                sqlite_conn = PegarConexao();
+                sqlite_conn.Open();
+                string sql = $"update CadUsuario(nome,email,senha) values('{nome}','{email}' ,'{senha}');";
+                SQLiteCommand comandoSQL = new SQLiteCommand(sql, sqlite_conn);
+                string resposta;
+                if (comandoSQL.ExecuteNonQuery() > 0)
+                {
+                    resposta = "Dados alterados com sucesso!!!";
+                }
+                else
+                {
+                    resposta = "Não foi possível alterar!!!";
+                }
+                sqlite_conn.Close();
+                return resposta;
+            }
+            catch (Exception ex)
+            {
+                if (sqlite_conn != null)
+                {
+                    sqlite_conn.Close();
+                }
+                return "Não foi possível alterar!!!";
+            }
+        }
+
+
         public SQLiteConnection PegarConexao()
                 {
 	            string stringConnection = "Data Source = cadastro.db;";
