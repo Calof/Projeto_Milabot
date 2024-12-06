@@ -1,34 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Agendas\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\views\\tarefa\\escolha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\escolha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\tarefa\\adm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\adm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\tarefa\\tarefas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\views\\tarefa\\tarefas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\tarefas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|d:\\agendas\\agendas\\views\\tarefa\\escolha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\escolha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\cliente\\cadastrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\views\\tarefa\\adm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\tarefa\\adm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|c:\\users\\admin\\documents\\projeto_milabot\\agendas\\agendas\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{47BB4897-4B30-41D2-9060-677948D427A0}|Agendas\\Agendas.csproj|solutionrelative:agendas\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,43 +54,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\wwwroot\\css\\Login.css",
+              "RelativeDocumentMoniker": "Agendas\\wwwroot\\css\\Login.css",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\wwwroot\\css\\Login.css",
+              "RelativeToolTip": "Agendas\\wwwroot\\css\\Login.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-26T16:52:43.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Agendas\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Agendas\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-26T16:45:02.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Style.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\wwwroot\\css\\Style.css",
+              "RelativeDocumentMoniker": "Agendas\\wwwroot\\css\\Style.css",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\wwwroot\\css\\Style.css",
+              "RelativeToolTip": "Agendas\\wwwroot\\css\\Style.css",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-26T16:44:46.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Agendas\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Agendas\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T15:06:31.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Adm.cshtml",
-              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Adm.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Tarefa\\Adm.cshtml",
               "RelativeDocumentMoniker": "Agendas\\Views\\Tarefa\\Adm.cshtml",
-              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Adm.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Tarefa\\Adm.cshtml",
               "RelativeToolTip": "Agendas\\Views\\Tarefa\\Adm.cshtml",
-              "ViewState": "AgIAALMAAAAAAAAAAAAgwMMAAAAUAAAAAAAAAA==",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-12T01:11:17.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "TarefaController.cs",
-              "DocumentMoniker": "D:\\Agendas\\Agendas\\Controllers\\TarefaController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Controllers\\TarefaController.cs",
               "RelativeDocumentMoniker": "Agendas\\Controllers\\TarefaController.cs",
-              "ToolTip": "D:\\Agendas\\Agendas\\Controllers\\TarefaController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Controllers\\TarefaController.cs",
               "RelativeToolTip": "Agendas\\Controllers\\TarefaController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAYwIAAAAA7AAAAAAAAAA==",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwBEAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T00:57:48.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CadastroCliente.cshtml",
-              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
               "RelativeDocumentMoniker": "Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
-              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
               "RelativeToolTip": "Agendas\\Views\\Cliente\\CadastroCliente.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAACkAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-29T23:32:49.75Z",
               "EditorCaption": ""
@@ -83,49 +151,53 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Agendas\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Agendas\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T23:22:07.978Z"
+              "WhenOpened": "2024-11-05T23:22:07.978Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Agendas\\Agendas\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Program.cs",
               "RelativeDocumentMoniker": "Agendas\\Program.cs",
-              "ToolTip": "D:\\Agendas\\Agendas\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Program.cs",
               "RelativeToolTip": "Agendas\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:22:44.996Z"
+              "WhenOpened": "2024-11-05T23:22:44.996Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Tarefas.cshtml",
-              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Tarefas.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Tarefa\\Tarefas.cshtml",
               "RelativeDocumentMoniker": "Agendas\\Views\\Tarefa\\Tarefas.cshtml",
-              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Tarefas.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Tarefa\\Tarefas.cshtml",
               "RelativeToolTip": "Agendas\\Views\\Tarefa\\Tarefas.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAADwv3oAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAABMAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T00:02:20.116Z"
+              "WhenOpened": "2024-10-30T00:02:20.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Escolha.cshtml",
-              "DocumentMoniker": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Escolha.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Tarefa\\Escolha.cshtml",
               "RelativeDocumentMoniker": "Agendas\\Views\\Tarefa\\Escolha.cshtml",
-              "ToolTip": "D:\\Agendas\\Agendas\\Views\\Tarefa\\Escolha.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Projeto_Milabot\\Agendas\\Agendas\\Views\\Tarefa\\Escolha.cshtml",
               "RelativeToolTip": "Agendas\\Views\\Tarefa\\Escolha.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T00:02:03.68Z"
+              "WhenOpened": "2024-10-30T00:02:03.68Z",
+              "EditorCaption": ""
             }
           ]
         }

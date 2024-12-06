@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Agendas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+708218112bd9413c5898e6d632e31d5ad7d3ed49")]
 [assembly: System.Reflection.AssemblyProductAttribute("Agendas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Agendas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
